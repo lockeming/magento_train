@@ -1,0 +1,7 @@
+<div class="user-info">
+    <h1>Show User Info</h1>
+    <?php $user = $this->getUser() ?>
+    <?php if(!empty($user)) : ?>
+        <div class="name-info">Name:<?php echo $user->getFirstName() ?>&nbsp;<?php echo $user->getLastName() ?></div>
+    <?php endif;?>
+</div>
